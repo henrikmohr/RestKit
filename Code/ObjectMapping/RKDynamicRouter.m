@@ -101,7 +101,7 @@
     }
     
 	// By default return a form encoded serializable dictionary
-	return [object propertiesForSerialization];
+	return [RKJSONSerialization JSONSerializationWithObject:[object propertiesForSerialization]];
 }
 
 @end
